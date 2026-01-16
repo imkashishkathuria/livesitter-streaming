@@ -4,6 +4,7 @@ import Cameras from './pages/Cameras'
 import Finance from './pages/Finance'
 import AccountStatus from './pages/AccountStatus'
 import Dashboard from './pages/Dashboard'
+import RecurryingPayment from './pages/RecurryingPayment'
 
 const App = () => {
   return (
@@ -14,7 +15,7 @@ const App = () => {
         <Route path="/cameras" element={<Cameras />} />
         <Route path="/finance" element={<Finance />} />
          <Route path="/accountstatus" element={<AccountStatus />} />
-
+        <Route path="/recurringpayment" element={<RecurryingPayment />} />
       </Routes>
     </BrowserRouter>
   )
