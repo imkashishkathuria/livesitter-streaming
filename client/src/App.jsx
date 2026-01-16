@@ -5,6 +5,8 @@ import Finance from './pages/Finance'
 import AccountStatus from './pages/AccountStatus'
 import Dashboard from './pages/Dashboard'
 import RecurryingPayment from './pages/RecurryingPayment'
+import NewCamera from './pages/NewCamera'
+import StreamTest from './pages/StreamTest'
 
 const App = () => {
   return (
@@ -16,6 +18,8 @@ const App = () => {
         <Route path="/finance" element={<Finance />} />
          <Route path="/accountstatus" element={<AccountStatus />} />
         <Route path="/recurringpayment" element={<RecurryingPayment />} />
+         <Route path="/newcamera" element={<NewCamera />} />
+          <Route path="/streamtest" element={<StreamTest />} />
       </Routes>
     </BrowserRouter>
   )

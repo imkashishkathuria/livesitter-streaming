@@ -3,8 +3,10 @@ import Navbar from '../components/Navbar'
 import PageHeader from '../components/PageHeader'
 import NewButton from '../components/NewButton'
 import Footer from '../components/Footer'
+import { useNavigate } from 'react-router-dom'
 
 const Dashboard = () => {
+  const navigate = useNavigate();
   return (
     <div>
       <Navbar />
@@ -23,7 +25,9 @@ const Dashboard = () => {
         </div>
       </div>
 
+      <div onClick={()=>navigate("/newcamera")}>
       <NewButton text="NEW CAMERA" />
+      </div>
       <div className='pt-43'>
         <Footer />
         </div>
